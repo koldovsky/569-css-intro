@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header nav .logo {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header nav .menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+#products,
+#contacts {
+    color: red;
+}
+
+.product-list {
+    border: 1px solid #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-list article {
+    border: 1px solid green;
+    margin: 20px;
+    padding: 20px;
+}
+
+.product-list article img {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.product-list article h3 {
+    text-align: center;
+}
+
+.product-list article h3::before {
+    content: "<";
+}
+
+.product-list article h3::after {
+    content: ">";
+}
+
+p::first-letter {
+    font-size: 2rem;
+}
+
+p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
